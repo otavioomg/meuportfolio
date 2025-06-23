@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@media screen and (max-width: 600px) {
+  .linguagens {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .item {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .item img{
+    width: 50px;
+  }
+  
+  #horas{
+    font-size: 10vw;
+  }
+
+  .leFadeInLeft span { animation-name: leFadeInLeft }
+    @keyframes leFadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+      to { opacity: 1 }
+}
+}
+
+
+theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+}
+
+nav {
+    background: #06141b;
+}
+
+.item {
+  transition: .35s;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.item img{
+  width: 60px;
+}
+
+.linguagens {
+  flex: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+}
+
+.linguagens:hover > :not(:hover){
+  opacity: .4;
+  transform: scale(0.9);
+}
+
+#scrollspyHeading2 {
+  text-align: center;
+  font-family: "Jersey 20", sans-serif;
+  color: #6192d2;
+}
+
+#scrollspyHeading3 {
+  text-align: center;
+  font-family: "Jersey 20", sans-serif;
+  color: #6192d2;
+}
+
+#horas {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #147aff;
+  font-size: 4vw;
+  word-break: break-word;
+  margin: 20px 0;
+}
+
+.leFadeInLeft span { animation-name: leFadeInLeft }
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to { opacity: 1 }
+}
+
+.sph3 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Outfit", sans-serif;
+}
+
+.itens {
+  border: #06141b 1px solid;
+  border-radius: 50px;
+  margin: 5px;
+  display: flex;
+  width: 20%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  align-self: center;
+}
